@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Estacionamiento</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Estacionamiento</h1>
+
+        <div class="form-container">
+            <h2>Entrada de Auto</h2>
+            <form id="entradaForm">
+                <label for="placa">Placa:</label>
+                <input type="text" id="placa" name="placa" required>
+
+                <label for="propietario">Propietario:</label>
+                <input type="text" id="propietario" name="propietario" required>
+
+                <button type="submit">Ingresar Auto</button>
+            </form>
+        </div>
+
+        <div class="actions">
+            <button id="salidaAuto">Salida de Auto</button>
+        </div>
+
+        <div class="log">
+            <h2>Registro</h2>
+            <pre id="logOutput"></pre>
+        </div>
+
+        <!-- Nueva sección para listar los autos en el estacionamiento -->
+        <div class="parking-list">
+            <h2>Autos en el Estacionamiento</h2>
+            <ul id="listaEstacionamiento"></ul>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
